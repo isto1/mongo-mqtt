@@ -1,4 +1,4 @@
-# mongo
+# mongo 26.04.2022
 
 from typing import List
 from datetime import datetime
@@ -11,9 +11,9 @@ import threading
 import os
 
 
-MONGO_URI = "mongodb://127.0.0.1:27017"  # mongodb://user:pass@ip:port || mongodb://ip:port
-MONGO_DB = "domotics"
-MONGO_COLLECTION = "mqtt"
+MONGO_URI = "mongodb://localhost:27017"  # mongodb://user:pass@ip:port || mongodb://ip:port
+MONGO_DB = "mqtt"
+MONGO_COLLECTION = "measures"
 MONGO_TIMEOUT = 1  # Time in seconds
 MONGO_DATETIME_FORMAT = "%d/%m/%Y %H:%M:%S"
 
@@ -94,10 +94,3 @@ class Mongo(object):
             self._store(msg)
         else:
             self._enqueue(msg)
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHu

@@ -1,4 +1,4 @@
-# mqtt
+# mqtt 26.04.2022
 
 import paho.mqtt.client as mqtt
 import os
@@ -6,7 +6,7 @@ import os
 from mongo import Mongo
 
 
-MQTT_BROKER = "127.0.0.1"
+MQTT_BROKER = "192.168.178.31"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE = 60
 MQTT_QOS = 2

@@ -1,0 +1,75 @@
+2022-04-26T20:58:30.137+0200 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2022-04-26T20:58:30.141+0200 I  CONTROL  [initandlisten] MongoDB starting : pid=21912 port=27017 dbpath=D:\Ingo\Mongo_Mosquitto_Dev\data 64-bit host=Buero-PC
+2022-04-26T20:58:30.141+0200 I  CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2022-04-26T20:58:30.141+0200 I  CONTROL  [initandlisten] db version v4.2.2
+2022-04-26T20:58:30.141+0200 I  CONTROL  [initandlisten] git version: a0bbbff6ada159e19298d37946ac8dc4b497eadf
+2022-04-26T20:58:30.141+0200 I  CONTROL  [initandlisten] allocator: tcmalloc
+2022-04-26T20:58:30.141+0200 I  CONTROL  [initandlisten] modules: enterprise 
+2022-04-26T20:58:30.142+0200 I  CONTROL  [initandlisten] build environment:
+2022-04-26T20:58:30.142+0200 I  CONTROL  [initandlisten]     distmod: windows-64
+2022-04-26T20:58:30.142+0200 I  CONTROL  [initandlisten]     distarch: x86_64
+2022-04-26T20:58:30.142+0200 I  CONTROL  [initandlisten]     target_arch: x86_64
+2022-04-26T20:58:30.142+0200 I  CONTROL  [initandlisten] options: { config: "D:\Ingo\Mongo_Mosquitto_Dev\mongod.cfg", net: { bindIp: "localhost", port: 27017 }, storage: { dbPath: "D:\Ingo\Mongo_Mosquitto_Dev\data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "D:\Ingo\Mongo_Mosquitto_Dev\mongod.log" } }
+2022-04-26T20:58:30.144+0200 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=15848M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2022-04-26T20:58:30.178+0200 I  STORAGE  [initandlisten] WiredTiger message [1650999510:177387][21912:140720831160688], txn-recover: Set global recovery timestamp: (0,0)
+2022-04-26T20:58:30.197+0200 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2022-04-26T20:58:30.215+0200 I  STORAGE  [initandlisten] Timestamp monitor starting
+2022-04-26T20:58:30.224+0200 I  CONTROL  [initandlisten] 
+2022-04-26T20:58:30.224+0200 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2022-04-26T20:58:30.224+0200 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2022-04-26T20:58:30.224+0200 I  CONTROL  [initandlisten] 
+2022-04-26T20:58:30.225+0200 I  STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: f1f6ffdb-eb9d-41d3-b985-038447291d61 and options: { uuid: UUID("f1f6ffdb-eb9d-41d3-b985-038447291d61") }
+2022-04-26T20:58:30.240+0200 I  INDEX    [initandlisten] index build: done building index _id_ on ns admin.system.version
+2022-04-26T20:58:30.240+0200 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2022-04-26T20:58:30.240+0200 I  COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.2
+2022-04-26T20:58:30.241+0200 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2022-04-26T20:58:30.241+0200 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2022-04-26T20:58:30.241+0200 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2022-04-26T20:58:30.242+0200 I  STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: d5c8577e-a1de-45f7-b09e-b0d6ac720d60 and options: { capped: true, size: 10485760 }
+2022-04-26T20:58:30.254+0200 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+2022-04-26T20:58:30.254+0200 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2022-04-26T20:58:30.551+0200 W  FTDC     [initandlisten] Failed to initialize Performance Counters for FTDC: WindowsPdhError: PdhExpandCounterPathW failed with 'Das angegebene Objekt wurde nicht auf dem Computer gefunden.' for counter '\Memory\Available Bytes'
+2022-04-26T20:58:30.551+0200 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'D:/Ingo/Mongo_Mosquitto_Dev/data/diagnostic.data'
+2022-04-26T20:58:30.552+0200 I  SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+2022-04-26T20:58:30.552+0200 I  NETWORK  [initandlisten] Listening on 127.0.0.1
+2022-04-26T20:58:30.552+0200 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: config.system.sessions does not exist
+2022-04-26T20:58:30.552+0200 I  NETWORK  [initandlisten] waiting for connections on port 27017
+2022-04-26T20:58:30.552+0200 I  STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with provided UUID: 27c4b2ca-2abe-4bc9-a316-20227d9390b4 and options: { uuid: UUID("27c4b2ca-2abe-4bc9-a316-20227d9390b4") }
+2022-04-26T20:58:30.565+0200 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index _id_ on ns config.system.sessions
+2022-04-26T20:58:30.580+0200 I  INDEX    [LogicalSessionCacheRefresh] index build: starting on config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 } using method: Hybrid
+2022-04-26T20:58:30.580+0200 I  INDEX    [LogicalSessionCacheRefresh] build may temporarily use up to 500 megabytes of RAM
+2022-04-26T20:58:30.580+0200 I  INDEX    [LogicalSessionCacheRefresh] index build: collection scan done. scanned 0 total records in 0 seconds
+2022-04-26T20:58:30.581+0200 I  INDEX    [LogicalSessionCacheRefresh] index build: inserted 0 keys from external sorter into index in 0 seconds
+2022-04-26T20:58:30.586+0200 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index lsidTTLIndex on ns config.system.sessions
+2022-04-26T20:58:31.001+0200 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2022-04-26T21:02:00.405+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:57532 #1 (1 connection now open)
+2022-04-26T21:02:00.406+0200 I  NETWORK  [conn1] received client metadata from 127.0.0.1:57532 conn1: { driver: { name: "PyMongo", version: "4.1.1" }, os: { type: "Windows", name: "Windows 10", architecture: "AMD64", version: "10.0.22000-SP0" }, platform: "CPython 3.10.4.final.0" }
+2022-04-26T21:02:11.620+0200 I  NETWORK  [conn1] end connection 127.0.0.1:57532 (0 connections now open)
+2022-04-26T21:02:41.101+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:57557 #2 (1 connection now open)
+2022-04-26T21:02:41.101+0200 I  NETWORK  [conn2] received client metadata from 127.0.0.1:57557 conn2: { driver: { name: "PyMongo", version: "4.1.1" }, os: { type: "Windows", name: "Windows 10", architecture: "AMD64", version: "10.0.22000-SP0" }, platform: "CPython 3.10.4.final.0" }
+2022-04-26T21:03:30.552+0200 I  SHARDING [LogicalSessionCacheReap] Marking collection config.transactions as collection version: <unsharded>
+2022-04-26T21:04:00.919+0200 I  NETWORK  [conn2] end connection 127.0.0.1:57557 (0 connections now open)
+2022-04-26T21:06:05.626+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:59430 #3 (1 connection now open)
+2022-04-26T21:06:05.628+0200 I  NETWORK  [conn3] received client metadata from 127.0.0.1:59430 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.2" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 22000)" } }
+2022-04-26T21:07:20.212+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:59447 #4 (2 connections now open)
+2022-04-26T21:07:20.212+0200 I  NETWORK  [conn4] received client metadata from 127.0.0.1:59447 conn4: { driver: { name: "PyMongo", version: "4.1.1" }, os: { type: "Windows", name: "Windows 10", architecture: "AMD64", version: "10.0.22000-SP0" }, platform: "CPython 3.10.4.final.0" }
+2022-04-26T21:07:20.215+0200 I  NETWORK  [conn4] end connection 127.0.0.1:59447 (1 connection now open)
+2022-04-26T21:16:17.497+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:63673 #5 (2 connections now open)
+2022-04-26T21:16:17.498+0200 I  NETWORK  [conn5] received client metadata from 127.0.0.1:63673 conn5: { driver: { name: "PyMongo", version: "4.1.1" }, os: { type: "Windows", name: "Windows 10", architecture: "AMD64", version: "10.0.22000-SP0" }, platform: "CPython 3.10.4.final.0" }
+2022-04-26T21:16:43.406+0200 I  NETWORK  [conn5] end connection 127.0.0.1:63673 (1 connection now open)
+2022-04-26T21:20:50.906+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:61997 #6 (2 connections now open)
+2022-04-26T21:20:50.908+0200 I  NETWORK  [conn6] received client metadata from 127.0.0.1:61997 conn6: { driver: { name: "PyMongo", version: "4.1.1" }, os: { type: "Windows", name: "Windows 10", architecture: "AMD64", version: "10.0.22000-SP0" }, platform: "CPython 3.10.4.final.0" }
+2022-04-26T21:21:13.219+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:62008 #7 (3 connections now open)
+2022-04-26T21:21:13.222+0200 I  NETWORK  [conn7] received client metadata from 127.0.0.1:62008 conn7: { driver: { name: "PyMongo", version: "4.1.1" }, os: { type: "Windows", name: "Windows 10", architecture: "AMD64", version: "10.0.22000-SP0" }, platform: "CPython 3.10.4.final.0" }
+2022-04-26T21:21:44.360+0200 I  NETWORK  [conn6] end connection 127.0.0.1:61997 (2 connections now open)
+2022-04-26T21:21:49.872+0200 I  NETWORK  [conn7] end connection 127.0.0.1:62008 (1 connection now open)
+2022-04-26T21:23:47.838+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:53435 #8 (2 connections now open)
+2022-04-26T21:23:47.838+0200 I  NETWORK  [conn8] received client metadata from 127.0.0.1:53435 conn8: { driver: { name: "PyMongo", version: "4.1.1" }, os: { type: "Windows", name: "Windows 10", architecture: "AMD64", version: "10.0.22000-SP0" }, platform: "CPython 3.10.4.final.0" }
+2022-04-26T21:24:42.254+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:53445 #9 (3 connections now open)
+2022-04-26T21:24:42.278+0200 I  NETWORK  [conn9] received client metadata from 127.0.0.1:53445 conn9: { driver: { name: "PyMongo", version: "4.1.1" }, os: { type: "Windows", name: "Windows 10", architecture: "AMD64", version: "10.0.22000-SP0" }, platform: "CPython 3.10.4.final.0" }
+2022-04-26T21:24:42.281+0200 I  SHARDING [conn9] Marking collection mqtt.measures as collection version: <unsharded>
+2022-04-26T21:24:42.281+0200 I  STORAGE  [conn9] createCollection: mqtt.measures with generated UUID: 3b54d275-a930-4bc8-9841-2fd310cbf928 and options: {}
+2022-04-26T21:24:42.294+0200 I  INDEX    [conn9] index build: done building index _id_ on ns mqtt.measures
+2022-04-26T21:27:13.183+0200 I  SHARDING [conn3] Marking collection mqtt.message as collection version: <unsharded>
+2022-04-26T21:29:30.663+0200 I  NETWORK  [conn8] end connection 127.0.0.1:53435 (1 connection now open)
+2022-04-26T21:29:30.663+0200 I  NETWORK  [conn9] end connection 127.0.0.1:53445 (2 connections now open)
